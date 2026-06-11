@@ -1,0 +1,15 @@
+.play-btn:hover {
+    transform: scale(1.1);
+}
+
+.play-btn {
+    transition: all 0.2s ease;
+}
+
+.play-btn:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+button {
+    transition: all 0.2s ease;
+}

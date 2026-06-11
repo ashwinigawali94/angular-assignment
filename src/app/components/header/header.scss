@@ -1,0 +1,50 @@
+.navbar {
+  background: #000 !important;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-weight: 700;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #f5a623 !important;
+}
+
+.donate-btn {
+  background: #f5a623;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 28px;
+  font-weight: 600;
+}
+
+.donate-btn:hover {
+  background: #e58e00;
+  color: #fff;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    margin-top: 15px;
+  }
+
+  .navbar-nav {
+    gap: 10px;
+  }
+
+  .nav-link {
+    padding: 12px 0;
+  }
+}

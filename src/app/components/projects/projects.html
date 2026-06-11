@@ -1,0 +1,72 @@
+<!-- PROJECT SECTION -->
+
+<section class="py-5">
+  <div class="container">
+
+    <div class="mb-5">
+
+      <small class="text-uppercase fw-semibold text-secondary d-flex align-items-center gap-2">
+        <span style="width:40px;height:2px;background:#000;display:inline-block"></span>
+        Projects We Have Done
+      </small>
+
+      <h2 class="fw-bold mt-3 ps-5 project-heading">
+        We're building a world where women lead, thrive,
+        and are equally represented in every field.
+      </h2>
+
+    </div>
+
+    <div class="row g-4">
+
+      @for (project of projects; track project.title) {
+
+      <div class="col-md-6 col-lg-4">
+
+        <div class="card border-0 overflow-hidden project-card">
+
+          <img
+            [src]="project.image"
+            [alt]="project.title"
+            class="card-img">
+
+          <div class="overlay"></div>
+
+          <div class="card-img-overlay project-content">
+
+            <div class="content-wrapper">
+
+              <h5 class="text-white fw-bold project-title">
+                {{ project.title }}
+              </h5>
+
+              <p class="text-white project-desc mt-3">
+                {{ project.description }}
+              </p>
+
+            </div>
+
+            <button class="btn btn-light btn-sm px-3 project-btn">
+              Learn More
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      }
+
+    </div>
+
+    <div class="text-center mt-5">
+
+      <button class="btn btn-outline-dark  px-3 py-1">
+        MORE PROGRAMS
+      </button>
+
+    </div>
+
+  </div>
+</section>
